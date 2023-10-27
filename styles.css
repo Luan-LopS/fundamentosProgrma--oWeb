@@ -1,0 +1,65 @@
+/* Estilo para o cabeçalho (header) */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilo para a navegação (menu) */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilo para os links no menu de navegação */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo para o rodapé (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo para botões */
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para campos de formulário */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para formulário de validação */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Outros estilos reutilizáveis */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}

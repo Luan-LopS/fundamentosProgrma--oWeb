@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js"></script>
+    <title>Ação do Formulário - Nosso Site</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="form.html">Formulário</a></li>
+                <li><a href="formAction.html">Ação do Formulário</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Dados Recebidos:</h2>
+        <p id="dados-recebidos"><strong>Nome:</strong> Não disponível</p>
+        <p><strong>Email:</strong> Não disponível</p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Nosso site em desenvolvimento.</p>
+    </footer>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const nome = params.get('nome');
+        const email = params.get('email');
+
+        const dadosRecebidos = document.getElementById('dados-recebidos');
+        if (nome) {
+            dadosRecebidos.innerHTML = `<strong>Nome:</strong> ${nome}`;
+        }
+
+        if (email) {
+            dadosRecebidos.innerHTML += `<br><strong>Email:</strong> ${email}`;
+        }
+    </script>
+</body>
+</html>
