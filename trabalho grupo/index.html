@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/main.js"></script>
-    <title>Ação do Formulário - Nosso Site</title>
+    <title>Página Inicial - Meu Site</title>
 </head>
 <body>
     <header>
@@ -20,28 +20,13 @@
     </header>
 
     <main>
-        <h2>Dados Recebidos:</h2>
-        <p id="dados-recebidos"><strong>Nome:</strong> Não disponível</p>
-        <p><strong>Email:</strong> Não disponível</p>
+        <h1>Bem-vindo ao nosso Site</h1>
+        <p>Este é um exemplo de um site criado com HTML, CSS e JavaScript, demonstrando conceitos fundamentais no desenvolvimento front-end.</p>
+        <p>Sinta-se à vontade para explorar as outras páginas do site usando o menu de navegação acima.</p>
     </main>
-    
+
     <footer>
         <p>&copy; 2023 Nosso site em desenvolvimento.</p>
     </footer>
-
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const nome = params.get('nome');
-        const email = params.get('email');
-
-        const dadosRecebidos = document.getElementById('dados-recebidos');
-        if (nome) {
-            dadosRecebidos.innerHTML = `<strong>Nome:</strong> ${nome}`;
-        }
-
-        if (email) {
-            dadosRecebidos.innerHTML += `<br><strong>Email:</strong> ${email}`;
-        }
-    </script>
 </body>
 </html>

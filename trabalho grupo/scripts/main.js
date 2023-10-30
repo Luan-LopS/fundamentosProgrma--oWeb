@@ -1,11 +1,3 @@
-// Adiciona manipuladores de eventos aos botões
-//document.getElementById('menu-button').addEventListener('click', toggleMenu);
-//document.getElementById('popup-button').addEventListener('click', abrirPopup);
-//document.getElementById('validar-button').addEventListener('click', validarCampo);
-document.getElementById('alterar-estilo-button').addEventListener('click', alterarEstilo);
-
-
-
 // Função para mostrar/ocultar um menu de navegação
 function toggleMenu() {
     const menu = document.getElementById('menu');
@@ -39,3 +31,8 @@ function alterarEstilo() {
     elemento.style.fontWeight = 'bold';
 }
 
+// Adiciona manipuladores de eventos aos botões
+document.getElementById('menu-button').addEventListener('click', toggleMenu);
+document.getElementById('popup-button').addEventListener('click', abrirPopup);
+document.getElementById('validar-button').addEventListener('click', validarCampo);
+document.getElementById('alterar-estilo-button').addEventListener('click', alterarEstilo);

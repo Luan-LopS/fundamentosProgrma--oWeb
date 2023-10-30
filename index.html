@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/main.js"></script>
+    <!---link com css ----->
+    <link rel="stylesheet" href="styles/style.css">
+    <!---link com cdn font awesome ----->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Página Inicial - Meu Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <title>helloween Shop</title>
 </head>
 <body>
-    <header>
-        <i class="fa-solid fa-mug-hot" style="color: #ffffff;"><a href="index.html"></a></i>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="form.html">Formulário</a></li>
-                <li><a href="formAction.html">Ação do Formulário</a></li>
-                <li><a href="about.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="container">    
+            <header class="menu">
+                
+                <nav>
+                    <a href="#home">HOME</a>
+                    <ul>
+                        <li><a href="#">PRODUTOS</a></li>
+                        <li><a href="">CADASTRO</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">RECUPERAÇÃO DE DADOS</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-    <main>
-        <h1>Bem-vindo ao nosso Site</h1>
-        <p>Este é um exemplo de um site criado com HTML, CSS e JavaScript, demonstrando conceitos fundamentais no desenvolvimento front-end.</p>
-        <p>Sinta-se à vontade para explorar as outras páginas do site usando o menu de navegação acima.</p>
-    </main>
+            <main>
+                <h1>Bem Vindo <i class="fa-solid fa-ghost" style="color: red; font-size: 50px;"></i></h1>
+                <p>loja especializada em produtos de heloween, terro e suspense </p>
 
-    <footer>
-        <p>&copy; 2023 Site em desenvolvi por Pedro Henrique e Luan Lopes.</p>
-    </footer>
+            </main>
+
+            <footer>
+                desenvolvido por Luan lopes de siqueira
+            </footer>
+        </div>
+    <!---link com js ----->
+    <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -1,33 +1,8 @@
-
-/* zerando configuração de navegador */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* configuração de layout com grid  e plano de fundo */
-body{
-    background-image: url('/jon-butterworth-pxhKYRe_SSw-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-areas: 'header header header'
-                          '. container .'  
-                           'footer footer footer';
-}
-
 /* Estilo para o cabeçalho (header) */
 header {
-    grid-area: header;
     background-color: #333;
     color: #fff;
-    padding: 20px 35px;
-    display: flex;
-    align-items: center;
-    height: 12vh;
-
+    padding: 10px;
 }
 
 /* Estilo para a navegação (menu) */
@@ -49,20 +24,15 @@ nav a {
 
 /* Estilo para o conteúdo principal */
 main {
-    grid-area: container;
-    height: 78vh;
-    width: 60vw;
+    padding: 20px;
 }
 
 /* Estilo para o rodapé (footer) */
 footer {
-    grid-area: footer;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-    height: 10vh;
-
 }
 
 /* Estilo para botões */

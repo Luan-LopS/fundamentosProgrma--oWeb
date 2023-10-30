@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ... outros elementos do cabeçalho ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js"></script> <!-- Adicione esta linha -->
+    <title>Ação do Formulário - Nosso Site</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="form.html">Formulário</a></li>
+                <li><a href="formAction.html">Ação do Formulário</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Dados Recebidos:</h2>
+        <p id="nome-recebido"><strong>Nome:</strong> Não disponível</p>
+        <p id="email-recebido"><strong>Email:</strong> Não disponível</p>
+        <script>
+            const params = getParameters();
+            for (let [key, value] of Object.entries(params)) {
+                document.write("<tr><td>" + key + "</td><td>" + value + "</td></tr>");
+            }
+        </script>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Nosso site em desenvolvimento.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nomeRecebido = document.getElementById('nome-recebido');
+            const emailRecebido = document.getElementById('email-recebido');
+
+            // Recupera os dados do localStorage
+            const nome = localStorage.getItem('nome');
+            const email = localStorage.getItem('email');
+
+            // Exibe os dados na página
+            if (nome) {
+                nomeRecebido.innerHTML = `<strong>Nome:</strong> ${nome}`;
+            }
+
+            if (email) {
+                emailRecebido.innerHTML = `<br><strong>Email:</strong> ${email}`;
+            }
+        });
+    </script>
+    
+</body>
+</html>
