@@ -20,7 +20,7 @@ body{
     display: grid;
     grid-template-areas: 'header header header'
                             '. main .'
-                            'footer footer footer';
+                            'footer footer footer';                        
 }
 
 /*style menu stard*/
@@ -28,7 +28,7 @@ body{
     grid-area: header;
     height: 5em;
     border-bottom: 1px solid black;
-    font-size: 1.2em;
+    font-size: 1em;
     background-color: black;
 }
 
@@ -56,33 +56,50 @@ a{
 
 /* style main stard */
 main{
+    position: relative;
     padding-top: 2em;
     grid-area: main;
-    font-size: 2em;
     text-align: center;
+    max-width: 850px;
 }
 
 main p {
-    padding-top: 30px;
-    font-size: 0.5em;
+    font-size: 0.8em;
     text-align: justify;
-    margin-bottom: 40px;
+    text-indent: 25px;
+    margin-bottom: 10px;
 }
 
 .produtos{
     position: relative;
-    display: flex;
     font-size: 0.6em;
-    max-width: 550px;
+    max-width: 600px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.imag{
+    width: 180px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.ordem{
+    display: none;
+    flex-wrap: wrap;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 10px;
 }
 
 .content{
-    width: 180px;
+    width: 200px;
     height: 200px;
-    border: 1px solid black;
     border-radius: 10px;
     box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 32px 80px 14px;
 }
 
 .conteudo{
@@ -95,27 +112,74 @@ main p {
     height: 80%;
 }
 
-.ordem{
-    display: none;
-    flex-wrap: wrap;
-    width: 550px;
-}
-
-.lista{
-    position: relative;
+.cadastro{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 20px 0 50px 0;
 }
 
 form{
     display: flex; 
     flex-direction: column;
+    border: none;
+    width: 100%;
+}
+
+.input-in{
+    font-size: 0.5em;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+.input-in label{
+    position: absolute;
+    left: 4px;
+    bottom: 5px;
+    color: rgba(241, 15, 15, 0.699);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+
+}
+
+.input-in input{
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid red;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 10px;
+}
+
+.input-in input:focus, .input-in input:valid{
+    border-bottom: 2px solid black;
+}
+
+.input-in input:focus ~ label, 
+.input-in input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: red;
 }
 
 .btn{
-    margin: 10px 0 5px 0 ;
-    background-color: brown;
+    margin-top: 20px;
+    background-color:  rgb(131, 6, 6);
     border-radius: 10px;
-    padding: 15px;
+    padding: 8px;
     font-size: 0.8em;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: black;
 }
 /* style main end */
 
@@ -123,15 +187,16 @@ form{
 /* style footer stard */
 
 footer{
-    position: relative;
+    top: 800px;
+    position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
     grid-area: footer;
     background-color: black;
-    height: 3em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
 }
-
-
-
 /* style footer end */
