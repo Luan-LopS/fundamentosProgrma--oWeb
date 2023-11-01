@@ -7,11 +7,14 @@
     font-family: 'Nosifer', sans-serif;
 }
 
+/*img de plano de fundo */
 body{
     background-image: url(/img/jon-butterworth-pxhKYRe_SSw-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/*configurando grid */
 
 .container{
     display: grid;
@@ -20,11 +23,13 @@ body{
                             'footer footer footer';
 }
 
-
+/*style menu stard*/
 .menu{
     grid-area: header;
     height: 5em;
     border-bottom: 1px solid black;
+    font-size: 1.2em;
+    background-color: black;
 }
 
 nav{
@@ -42,21 +47,91 @@ ul{
     justify-content: space-around;
 }
 
-
 a{
     text-decoration: none;
     color: red;
 }
+/*style menu end */
 
+
+/* style main stard */
 main{
     padding-top: 2em;
     grid-area: main;
-    height: 90vh;
     font-size: 2em;
+    text-align: center;
 }
 
+main p {
+    padding-top: 30px;
+    font-size: 0.5em;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.produtos{
+    position: relative;
+    display: flex;
+    font-size: 0.6em;
+    max-width: 550px;
+}
+
+.content{
+    width: 180px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.conteudo{
+    width: 100%;
+    height: 100%;
+}
+
+.conteudo img{
+    width: 80%;
+    height: 80%;
+}
+
+.ordem{
+    display: none;
+    flex-wrap: wrap;
+    width: 550px;
+}
+
+.lista{
+    position: relative;
+}
+
+form{
+    display: flex; 
+    flex-direction: column;
+}
+
+.btn{
+    margin: 10px 0 5px 0 ;
+    background-color: brown;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 0.8em;
+}
+/* style main end */
+
+
+/* style footer stard */
 
 footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     grid-area: footer;
+    background-color: black;
     height: 3em;
 }
+
+
+
+/* style footer end */
