@@ -51,6 +51,10 @@ a{
     text-decoration: none;
     color: red;
 }
+
+nav ul a:hover{
+    color: white;
+}
 /*style menu end */
 
 
