@@ -28,7 +28,7 @@ body{
     grid-area: header;
     height: 5em;
     border-bottom: 1px solid black;
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: black;
 }
 
@@ -68,7 +68,7 @@ main{
 }
 
 main p {
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: justify;
     text-indent: 25px;
     margin-bottom: 10px;
@@ -191,7 +191,7 @@ form{
 /* style footer stard */
 
 footer{
-    top: 800px;
+    top: 1200px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -201,6 +201,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.5em;
+    font-size: 0.6em;
 }
 /* style footer end */
