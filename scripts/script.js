@@ -4,7 +4,6 @@ function mostraProdutos(){
     let fantasia = document.getElementById('fantasia')
     let decoracao = document.getElementById('decoracao')
     let comida = document.getElementById('comida')
-    
     let ordem = document.getElementsByClassName('ordem')[0]
     let ordem1 = document.getElementsByClassName('ordem')[1]
     let ordem2 = document.getElementsByClassName('ordem')[2]
@@ -74,9 +73,9 @@ mostraProdutos()
 
 
 //validação de campos de cadastro
-function validarCampo() {
-    const campo = document.getElementById('campo');
-    const valor = campo.value.trim();
+//function validarCampo() {
+//    const campo = document.getElementById('campo');
+/*    const valor = campo.value.trim();
 
     if (valor === '') {
         campo.classList.add('campo-invalido');
@@ -87,5 +86,6 @@ function validarCampo() {
     }
 }
 
-document.getElementById('validar-button').addEventListener('click', validarCampo);
-validarCampo()
+//document.getElementById('validar-button').addEventListener('click', validarCampo);
+//validarCampo()
+*/

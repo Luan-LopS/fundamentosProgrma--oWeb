@@ -34,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const fone = localStorage.getItem('fone');
 
     // Exibe os dados na página
-
-
     if (nome) {
         nomeRecebido.innerHTML += nome;
         emailRecebido.innerHTML += email;

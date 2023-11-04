@@ -9,13 +9,12 @@
 
 /*img de plano de fundo */
 body{
-    background-image: url(/img/jon-butterworth-pxhKYRe_SSw-unsplash.jpg);
+    background-image: url(../img/jon-butterworth-pxhKYRe_SSw-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /*configurando grid */
-
 .container{
     display: grid;
     grid-template-areas: 'header header header'
@@ -81,7 +80,7 @@ main p {
     height: 200px;
     display: flex;
     flex-wrap: wrap;
-
+    cursor: pointer;
 }
 
 .imag{
@@ -147,7 +146,6 @@ form{
     cursor: text;
     transition: 0.5s ease-in-out;
     border-radius: 10px;
-
 }
 
 .input-in input{
